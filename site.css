@@ -1,0 +1,205 @@
+@charset "utf-8";
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image:url(images/bg-rpt1.jpg);
+	background-repeat:repeat-x;
+	background-position:left top;
+	background-color:#ffffff;
+	padding-bottom:49px;
+}
+.clouds {
+	background-image:url(images/clouds.jpg);
+	background-repeat:no-repeat;
+	background-position:left top;
+}
+td {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333333;
+	text-decoration:none;
+}
+.mid-txt {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333333;
+	text-decoration:none;
+	line-height:18px;
+}
+.white_bdr {
+	border-top:1px solid #ffffff;
+	background-color:#e2f4ff;
+}
+.black-12 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#181818;
+	text-decoration:none;
+}
+.black-11 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#181818;
+	text-decoration:none;
+	line-height:18px;
+}
+.link-bg {
+	border-left:2px solid #ffffff;
+	border-right:2px solid #ffffff;
+	border-top:1px solid #b3b3b3;
+	border-bottom:1px solid #b3b3b3;
+	background-image:url(images/link-bg.jpg);
+	background-repeat:repeat-x;
+	background-position:left center;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#333333;
+	text-decoration:none;
+}
+.top-link {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#333333;
+	text-decoration:none;
+}
+a.top-link:hover {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#318fcc;
+	text-decoration:none;
+}
+.top-link-act {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#318fcc;
+	text-decoration:none;
+}
+.img-bdr {
+	border-left:1px solid #b4b4b4;
+	border-right:1px solid #b4b4b4;
+	border-bottom:1px solid #b4b4b4;
+}
+.mid-bdr {
+	border-left:2px solid #ffffff;
+	border-right:2px solid #ffffff;
+	background-color:#e2f4ff;
+}
+.mid-bot-bdr {
+	border-bottom:2px solid #ffffff;
+	background-color:#e2f4ff;
+}
+.left-link-bg {
+	background-image:url(images/left-link-bg.jpg);
+	background-repeat:repeat-y;
+	background-position:left top;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#888888;
+	text-decoration:none;
+}
+.left-link {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#888888;
+	text-decoration:none;
+	padding-right:14px;
+}
+a.left-link:hover {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#318fcc;
+	text-decoration:none;
+	padding-right:14px;
+}
+.left-link-bdr {
+	border-top:1px solid #e1e1e1;
+}
+.right-bdr {
+	border-right:1px solid #cbcecf;
+	background-color:#ffffff;
+}
+.bot-bdr {
+	border-bottom:1px solid #cbcecf;
+	background-color:#ffffff;
+}
+.blue-30 {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:30px;
+	color:#67aad5;
+	text-decoration:none;
+}
+.blue-12 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#67aad5;
+	text-decoration:none;
+	line-height:18px;
+	font-weight: bold;
+}
+.blue-10 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#82c3ec;
+	text-decoration:none;
+}
+.black-10 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000000;
+	text-decoration:none;
+}
+.black-10-link {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000000;
+	text-decoration:none;
+}
+a.black-10-link:hover {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	color:#000000;
+	text-decoration:underline;
+}
+.footer-bg-rpt {
+	background-image:url(images/footer-bg-rpt.jpg);
+	background-repeat:repeat-x;
+	background-position:left top;
+}
+.footer-links {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#333333;
+	text-decoration:none;
+}
+a.footer-links:hover {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#333333;
+	text-decoration:underline;
+}
+h1{
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:18px;
+	color:#67aad5;
+	text-decoration:none;
+}
+.verd-25{
+	font-size:28px;
+	font-weight:normal;
+	color:#67aad5;
+	text-decoration:none;
+}
+.verd-18{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:20px;
+	font-weight:normal;
+	color:#67aad5;
+	text-decoration:none;
+}
+.verd-15{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:normal;
+	color:#67aad5;
+	text-decoration:none;
+}

@@ -1,0 +1,58 @@
+<?php
+function SendHTMLMail1($to1,$subject2,$mailcontent1,$from1,$cc="")
+{
+	$limite = "_parties_".md5 (uniqid (rand()));
+	$headers = "From: $from1\r\n";
+	$headers .= "MIME-Version: 1.0\r\n";
+	$headers .= "Content-type: text/html; charset=iso-8859-1\r\n";
+		
+	mail($to1,$subject2,$mailcontent1,$headers);
+}
+
+$month=$_REQUEST['month'];
+$day=$_REQUEST['day'];
+$year=$_REQUEST['year'];
+
+$selectday=$_REQUEST['selectday'];
+$selecttime=$_REQUEST['selecttime'];
+$selectflexible=$_REQUEST['selectflexible'];
+
+$fullname=$_REQUEST['fullname'];
+$email=$_REQUEST['email'];
+$phone=$_REQUEST['phone'];
+$description=$_REQUEST['description'];
+$toemail=$_REQUEST['toemail'];
+
+
+$to="umasundarammd@yahoo.com";
+$from=$email;
+$subject="Appointment detail from user";
+
+$mailcontent="
+***********************************<bR>
+		   &nbsp;&nbsp;&nbsp;&nbsp;
+		   &nbsp;&nbsp;&nbsp;&nbsp;
+		   &nbsp;&nbsp;&nbsp;&nbsp;
+		   &nbsp;&nbsp;&nbsp;&nbsp;
+		   Contact Detail<bR>
+***********************************<bR>
+
+<strong>Appointment Date</strong>: $month , $day , $year<BR>
+
+<strong>Appointment Day</strong>: $selectday<BR>
+<strong>Appointment Time of Day</strong>: $selecttime<BR>
+<strong>Flexible Time</strong>: $selectflexible<BR>
+
+<strong>Full Name</strong>: $fullname<BR>
+<strong>Email</strong>: $email<BR>
+<strong>Phone</strong>: $phone<BR>
+<strong>Nature of Appointment</strong>: $description<BR>
+
+
+<BR><BR>";
+
+@SendHTMLMail1($to,$subject,$mailcontent,$from);
+
+header('location:thankyou.htm');
+exit;
+?>

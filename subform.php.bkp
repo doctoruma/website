@@ -1,0 +1,134 @@
+<?php
+
+/* Isearchable Form - www.isearchable.com */
+
+	$emailSubject = 'Doctors Survey Form';
+    $webMaster = 'umasundarammd@yahoo.com';
+    
+/* Data Variables */
+
+	$g1 = $_POST['g1'];
+	$g2 = $_POST['g2'];
+	$g3 = $_POST['g3'];
+	$g4 = $_POST['g4'];
+	$g5 = $_POST['g5'];
+	$g6 = $_POST['g6'];
+	$g7 = $_POST['g7'];
+	$g8 = $_POST['g8'];
+	$g9 = $_POST['g9'];
+	$g10 = $_POST['g10'];
+	$g11 = $_POST['g11'];
+	$g12 = $_POST['g12'];
+	$g13 = $_POST['g13'];
+	$comm1 = $_POST['comm1'];
+	$comm2 = $_POST['comm2'];
+
+$body = <<<EOD
+<br />
+<table cellpadding="0" cellspacing="10" border="0" width="800px" align="center">
+  <th>Patient Satisfaction Survey Answers</th>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td><strong>1 . Were the  waiting room, examination rooms, toilet conditions clean and comfortable?</strong></td>
+  </tr>
+  <tr>
+    <td>$g1</td>
+  </tr>
+  <tr>
+    <td><strong>2. Were you greeted in a warm friendly manner by our office staff?</strong></td>
+  </tr>
+  <tr>
+    <td>$g2</td>
+  </tr>
+  <tr>
+    <td><strong>3. How long do you have to wait before escorted to the exam room?</strong></td>
+  </tr>
+  <tr>
+    <td>$g3</td>
+  </tr>
+  <tr>
+    <td><strong>4. How long do you have to wait before seeing the doctor?</strong></td>
+  </tr>
+  <tr>
+    <td>$g4</td>
+  </tr>
+    <tr>
+    <td><p>If more than 30  minutes, was there an explanation offered for the delay? This does NOT include  waiting, for lab results, treatment, etc.</p></td>
+  </tr>
+  <tr>
+    <td>$g5</td>
+  </tr>
+  <tr>
+    <td><strong>5.Were the office staff courteous and sensitive?</strong></td>
+  </tr>
+  <tr>
+    <td>$g6</td>
+  </tr>
+  <tr>
+    <td><strong>6. Do you have trust and confidence in the physician treating you?</strong></td>
+  </tr>
+  <tr>
+  	<td>$g7</td>
+  </tr>
+  <tr>
+    <td><strong>7. Were you given enough privacy during treatment?</strong></td>
+  </tr>
+  <tr>
+    <td>$g8</td>
+  </tr>
+  <tr>
+    <td><strong>8.  Did you find the medical services billed accurately and timely?</strong></td>
+  </tr>
+  <tr>
+    <td>$g9</td>
+  </tr>
+  <tr>
+    <td><strong>9. Do you receive electronic balance statements more than once a month?</strong></td>
+  </tr>
+  <tr>
+    <td>$g10</td>
+  </tr>
+  <tr>
+    <td><strong>If Yes, How Often?</strong></td>
+  </tr>
+  <tr>
+    <td>$g11</td>
+  </tr>
+  <tr>
+    <td><strong>10. Do you like the web site and its contents?</strong></td>
+  </tr>
+  <tr>
+    <td>$g12</td>
+  </tr>
+  <tr>
+    <td> $comm1</td>
+  </tr>
+  <tr>
+    <td><strong>11. Overall, how would you rate the child care you received?</strong></td>
+  </tr>
+  <tr>
+    <td>$g13</td>
+  </tr>
+   <tr>
+    <td><strong>Comments</strong></td>
+  </tr>
+  <tr>
+    <td>
+        $comm2
+    </td>
+  </tr>
+</table>
+EOD;
+
+	$headers = "From: info@whatever\r\n";
+	$headers = "Reply-To: info@whatever\r\n";
+    $headers .= "Content-type: text/html\r\n";
+    $success = mail($webMaster, $emailSubject, $body, $headers);
+
+/* Results Page */
+
+header("Location: index.html");
+
+?>
